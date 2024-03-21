@@ -1,0 +1,27 @@
+@use 'variables';
+.hero {
+    padding: 2vw;
+    min-height: 100vh;
+    background-image: url(../images/cake.jpg);
+    background-size: cover;
+        
+    &__text {
+        margin-top: 64px;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 56px;
+        text-align: center;
+        color: variables.$textColor;
+    }
+    
+    @media (max-width:640px) {
+        padding: 40px 0;
+        
+        &__text {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+    }
+}
+
